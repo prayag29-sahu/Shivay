@@ -1,0 +1,525 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    position: relative;
+    overflow: hidden;
+}
+#page{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.681);
+    backdrop-filter: brightness(40%);
+}
+#page1{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #7f7c7c;
+}
+#page2{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #9aa6aa;
+
+}
+#page3{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #ffcdcd;
+}
+ canvas{
+    position: relative;
+    z-index: 9;
+    max-width: 100%;
+    max-height: 100%;
+
+} 
+#loop{
+    display: flex;
+    position: absolute;
+    top: 75%;
+    height: 25%;
+    width: 100%;
+    font-size: 600%;
+    white-space: nowrap;
+    font-family: gilroy;
+    color: #e6dede;
+    
+}
+#loop>h1{
+    font-weight: 400;
+    animation-name: anim;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-image: url( https://hdqwalls.com/wallpapers/colorful-polygons.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+}  
+#loop>h1>span{
+    -webkit-text-stroke: 1.2% #e6dede;
+    color: rgb(251, 245, 245);
+    font-weight: 500;
+    background-image: url( https://hdqwalls.com/wallpapers/colorful-polygons.jpg);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+@keyframes anim{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7%;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    padding: 0px 30px;
+    background-color: rgb(20, 11, 11);
+}
+#nav>h1{
+    font-family: gilroy;
+    font-weight: 400;
+    font-size: 220%;
+    color:white;
+}
+ #nav>button{
+    padding: 1% 2%;
+    border-radius: 80%;
+    background-color: #f3f1f5;
+    color: #f06909;
+    border: none;
+}
+#page>a{
+        position: absolute;
+        top: 35%;
+        font-family: gilroy;
+        font-weight: 400;
+       left: 5%;
+         
+}
+
+#page>h1{
+    position: absolute;
+    top: 20%;
+    font-family: gilroy;
+    font-weight: 400;
+    color: #f7bd01;
+    -webkit-text-fill-color: #000000;
+    left: 2%;
+}
+#page>h2{
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    font-family: gilroy;
+    font-weight: 500;
+}
+#page1>#right-text{
+     position: absolute;
+    top: 2%;
+    left: 2%;
+}
+#page1>#right-text>h1{
+    font-weight: 1000;
+    color: #000000;
+}
+#page1>#right-text>h1{
+    line-height: 1.5;
+    font-size: 1000;
+    color:rgb(0, 0, 0);
+}
+#page1>#text1{
+    position: absolute;
+   top: 67%;
+   left: 2%;
+   font-size: 170%;
+   color: #e6dede;
+}
+#page1>#text1>h1{
+   font-weight: 1000;
+   color: #ff0000;
+   
+}
+#page1>#text1>h1{
+   line-height: 1.5;
+   font-size: 1000;
+   color:rgb(253, 0, 0);
+
+}
+#page1>#left-text{
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    text-align: end;
+    color: #a6c90a;
+    
+}
+#page1>#left-text>h1{
+    font-size: 300%;
+    line-height: 1.5;
+    color: #dfff0f;
+}
+#page1>#left-text>h2{
+    color: #1ad4f9;
+    font-size: 250%;
+    font-weight: 400;
+}
+#page2>#text1{
+    position: absolute;
+    top: 40%;
+    left: 2%;
+}
+#page2>#text1>h3{
+    color: #f909c9;
+    font-weight: 400;
+}
+#page2>#text1>h1{
+    font-size: 300%;
+    line-height: 1.5;
+    color:rgb(251, 255, 0);
+
+}
+#page2>#text2{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    text-align: end;
+    color:#ef1414
+}
+#page2>#text2>p{
+    color: hsl(0, 0%, 0%);
+    font-weight: 100;
+}
+#page2>#text3{
+    position: absolute;
+    top: 74%;
+    right: 7%;
+    text-align: end;
+    color:#e6dede;
+    font-size: 140%;
+}
+#page2>#text3>p{
+    color: #310de3;
+    font-weight: 100;
+}
+#page3>#text3{
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    text-align: end;
+}
+#page3>#text3>#left-text>h2{
+    color: #080808;
+    font-weight: 600;
+}
+#page3>#text3>h1{
+    font-size: 100%;
+    color:rgb(10, 8, 8);
+   
+}
+#page3>#left-text{
+
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    right:2%;
+    text-align: end;  
+}
+#page3>#left-text>h1{
+    color: #080808;
+    font-weight: 600;
+}
+#page3>#left-text>h2{
+    color: #080808;
+    font-weight: 600;
+}
+@media only screen and (max-width: 400px){
+
+    *{
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        font-family: gilroy;
+    }
+    html,body{
+        height: 100%;
+        width: 200%;
+    }
+    #main{
+        position: relative;
+        overflow: hidden;
+    }
+    #page{
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.681);
+    }
+    #page1{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background-color: #7f7c7c;
+    }
+    #page2{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background-color: #9aa6aa;
+    
+    }
+    #page3{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        background-color: #000000;
+    }
+     canvas{
+        position: relative;
+        z-index: 9;
+        max-width: 100%;
+        max-height: 10%;
+    
+    } 
+    #loop{
+        display: flex;
+        position: absolute;
+        top: 75%;
+        height: 25%;
+        width: 100%;
+        font-size: 600%;
+        white-space: nowrap;
+        font-family: gilroy;
+        color: #e6dede;
+        
+    }
+    #loop>h1{
+        font-weight: 400;
+        animation-name: anim;
+        animation-duration: 15s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        background-image: url(https://hdqwalls.com/wallpapers/colorful-polygons.jpg);
+        background-size: cover;
+        background-position: center;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    
+    }
+    #loop>h1>span{
+        -webkit-text-stroke: 1.2% #e6dede;
+        color: rgb(251, 245, 245);
+        font-weight: 500;
+        background-image: url(https://hdqwalls.com/wallpapers/colorful-polygons.jpg);
+        background-size: cover;
+        background-position: center;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    
+    }
+    @keyframes anim{
+        0%{
+            transform: translateX(0%);
+        }
+        100%{
+            transform: translateX(-100%);
+        }
+    }
+    #nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 2%;
+        width: 100%;
+        position: fixed;
+        z-index: 99;
+        padding: 0px 30px;
+        background-color: rgb(20, 11, 11);
+    }
+    #nav>h1{
+        font-family: gilroy;
+        font-weight: 400;
+        font-size: 220%;
+        color:white;
+    }
+     #nav>button{
+        padding: 1% 2%;
+        border-radius: 80%;
+        background-color: #f3f1f5;
+        color: #f06909;
+        border: none;
+    }
+    #page>a{
+            position: absolute;
+            top: 35%;
+            font-family: gilroy;
+            font-weight: 400;
+           left: 5%;
+             
+    }
+    
+    #page>h1{
+        position: absolute;
+        top: 7.7%;
+        font-family: gilroy;
+        font-weight: 400;
+        color: #f7bd01;
+        -webkit-text-fill-color: #000000;
+        left: 10%;
+    }
+    #page>h2{
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        font-family: gilroy;
+        font-weight: 500;
+    }
+    #page1>#right-text{
+         position: absolute;
+        top: 3%;
+        left: 2%;
+    }
+    #page1>#right-text>h2{
+        font-weight: 1000;
+        color: #0dfee6;
+    }
+    #page1>#right-text>h1{
+        line-height: 1.5;
+        font-size: 1000;
+        color:white;
+    }
+    #page1>#left-text{
+        position: absolute;
+        top: 70%;
+        right: 5%;
+        color: #a6c90a;
+        
+    }
+    #page1>#left-text>h1{
+        font-size: 300%;
+        line-height: 1.5;
+        color: #dfff0f;
+    }
+    #page1>#left-text>h2{
+        color: #1ad4f9;
+        font-size: 250%;
+        font-weight: 400;
+    }
+    #page1>#left-text{
+        position: absolute;
+        top: 50%;
+        right: 2%;
+        text-align: end;
+        color: #a6c90a;
+        
+    }
+    #page1>#left-text>h1{
+        font-size: 300%;
+        line-height: 1.5;
+        color: #dfff0f;
+    }
+    #page1>#left-text>h2{
+        color: #1ad4f9;
+        font-size: 250%;
+        font-weight: 400;
+    }
+    #page2>#text1{
+        position: absolute;
+        top: 45%;
+        left: 2%;
+    }
+    #page2>#text1>h3{
+        color: #f909c9;
+        font-weight: 400;
+    }
+    #page2>#text1>h1{
+        font-size: 300%;
+        line-height: 1.5;
+        color:white;
+    
+    }
+    #page2>#text2{
+        position: absolute;
+        top: 5%;
+        right: 3%;
+        text-align: end;
+        color:#ef1414
+    }
+    #page2>#text2>p{
+        color: #ffffff;
+        font-weight: 100;
+    }
+    #page2>#text3{
+        position: absolute;
+        top: 74%;
+        right: 7%;
+        text-align: end;
+        color:#e6dede;
+        font-size: 140%;
+    }
+    #page2>#text3>p{
+        color: #310de3;
+        font-weight: 100;
+    }
+    #page3>#text3{
+        position: absolute;
+        top: 5%;
+        left: 1%;
+        text-align: end;
+    }
+    #page3>#text3>#left-text>h2{
+        color: #080808;
+        font-weight: 400;
+    }
+    #page3>#text3>h1{
+        font-size: 70%;
+        color:rgb(10, 8, 8);
+    
+    }  
+    #page3>#left-text{
+
+        position: absolute;
+        top: 20%;
+        left: 60%;
+        right:2%;
+        text-align: end;  
+    }
+    #page3>#left-text>h1{
+        color: #080808;
+        font-weight: 600;
+    }
+    #page3>#left-text>h2{
+        color: #080808;
+        font-weight: 600;
+    } 
+ 
+}
+     
